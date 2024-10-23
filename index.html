@@ -2,81 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Elise Huang's Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-        }
-        header {
-            text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 1em;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rick Li's Personal Page</title>
 </head>
 <body>
-    <header>
-        <h1>Hello, I am Elise Huang</h1>
-        <p>Welcome to my website!</p>
-    </header>
-
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>I am currently enrolled in the MSc program in Cross-disciplinary Technology at Lingnan University, Hong Kong. I am studying a course on creating a simple personal website, and I am delighted that you have visited this page!</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>E-mail: <a href="mailto:yuqihuang3@ln.hk">yuqihuang3@ln.hk</a></p>
-    </section>
-
-    <section id="study-interests">
-        <h2>Study Interests</h2>
-        <ul>
-            <li>Business Finance</li>
-            <li>Arts Management</li>
-            <li>Artificial Intelligence</li>
-        </ul>
-    </section>
-
-    <section id="personal-interests">
-        <h2>Interests</h2>
-        <ul>
-            <li>Traveling</li>
-            <li>Movies</li>
-            <li>Art</li>
-        </ul>
-    </section>
-
-    <section id="favorite-quote">
-        <h2>Favorite Quote</h2>
-        <blockquote>
-            <p>The learned can see twice.</p>
-        </blockquote>
-    </section>
-
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Talks</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="profile">
+                <div class="profile__image">
+                    <!-- Replace with your actual image -->
+                    <img src="placeholder.jpg" alt="Rick Li's profile picture">
+                </div>
+                
+                <div class="profile__info">
+                    <h1>Bio</h1>
+                    <p>Hi there, I am Rick Li! Currently I am on MSc program in Robotics at TU Delft, Netherlands. Before this I completed my BEng in Nanjing University of Aeronautics and Astronautics. I prefer to seek PhD opportunity after my Master study. My research interests include robot perception, computer vision and autonomous system.</p>
+                    
+                    <h2>Interests</h2>
+                    <ul class="interests">
+                        <li>Artificial Intelligence</li>
+                        <li>Computer Vision</li>
+                        <li>Robot Perception</li>
+                        <li>Human Robot Interaction</li>
+                    </ul>
+                    
+                    <h2>Education</h2>
+                    <ul class="education">
+                        <li>MSc in Robotics, 2023 ~2025<br>Technology University of Delft</li>
+                        <li>Summer School in Robotics, 2022.7<br>Korea Advanced Institute of Science and Technology, Korea</li>
+                        <li>BEng in Aircraft Design and Engineering, 2019 ~ 2023<br>Nanjing University of Aeronautics and Astronautics, China</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    
     <footer>
-        <p>Thank you for visiting my page! If you have any questions or would like to connect, please feel free to reach out.</p>
+        <!-- Replace with your actual email link -->
+        <a href="mailto:rickli@example.com">Email</a>
+        <a href="#">CV</a>
     </footer>
 </body>
 </html>
