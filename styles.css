@@ -1,8 +1,11 @@
 /* styles.css */
 body {
-    background-color: #2b2b2b;
-    color: white;
+    background-image: url("your-background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .container {
     max-width: 1200px;
