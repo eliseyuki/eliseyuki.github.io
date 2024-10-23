@@ -1,38 +1,39 @@
-/* styles.css */
 body {
-    background-color: #2b2b2b;
-    color: white;
-    background-image: url("33454a774728e32680a31dcf9ed310e.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
-
 
 .container {
     max-width: 1200px;
     margin: auto;
 }
 
-header nav {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
     padding: 1rem;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav li {
-    margin-right: 1rem;
-}
-
-header nav a {
-    color: inherit;
+nav a {
+    color: #333;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
 }
 
 main {
@@ -52,9 +53,44 @@ main {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-interests,
-education {
+.profile__info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile__info p {
+    line-height: 1.5;
+}
+
+.interests, .education {
     list-style: none;
+    padding-left: 0;
+}
+
+.interests li::before, .education li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
 }
