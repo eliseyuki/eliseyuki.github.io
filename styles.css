@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 1rem;
+}
+
+header nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.profile__image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+interests,
+education {
+    list-style: none;
+}
